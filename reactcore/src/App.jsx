@@ -2,6 +2,7 @@
 import './App.css'
 import Core from './assets/Core'
 import Count from './assets/Count'
+import Team from './assets/Team'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <>
           <h3>React core Concept</h3>
           <Count ></Count>
+          <Team ></Team>
           <button onClick={handleClick}>Clock me </button>
           <button onClick={handleClick2}>Clock two </button>
       </>
