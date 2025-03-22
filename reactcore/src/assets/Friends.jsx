@@ -9,7 +9,6 @@ export default function Friends() {
         .then((res) => res.json())
         .then((data) => setFriends(data));
     }, []);
-
   return (
     <div className="box">
       <h2>Friends: {Friends.length} </h2>
