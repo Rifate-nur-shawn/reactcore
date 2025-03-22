@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PostData from "./PostData";
-import "./Friends.css";
+import "./Post.css";
 
 export default function Post() {
   const [Post, setPost] = useState([]);
@@ -15,7 +15,7 @@ export default function Post() {
     <div className="box">
       <h3>Posts: {Post.length}</h3>
       {Post.map((post) => (
-        <PostData key={post.id} PostData={post}></PostData>
+        <PostData PostData={post}></PostData>
       ))}
     </div>
   );
